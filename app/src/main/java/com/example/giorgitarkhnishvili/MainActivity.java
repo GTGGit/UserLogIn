@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show();
+            User newUser = new User(FirstName.getText().toString(),LastName.getText().toString(),Integer.parseInt(Age.getText().toString()));
         }
     }
 
